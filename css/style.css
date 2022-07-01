@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Londrina+Solid:wght@100&family=Megrim&display=swap');
+
+/* paleta de cores
+cor1 - { #517566 }
+cor2 - { #416557 }
+cor3 - { #325547 }
+cor4 - { #224538 }
+cor5 - { #123528 }
+*/
+
+/* paleta de cores 2
+cor1 - { #f3c75f }
+*/
+
+/* paleta de cores alternativa
+cor1 - { #1cc486 }
+cor2 - { #0c5f40 }
+cor3 - { #32473f }
+*/
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Lato;
+  background-color: #f3c75f;
+}
+
+header {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  background-color: #325547;
+}
+
+main{
+  position: absolute;
+  height:100%;
+  width:100%;
+}
+
+.nav {
+  height: 90px;
+}
+
+.logo {
+  color: white;
+  line-height: 90px;
+  font-size: 36px;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  margin-left: 40px;
+  font-family: 'Megrim';
+}
+
+.navlinks {
+  list-style: none;
+  line-height: 90px;
+  float: right; 
+  margin: 0;
+  padding: 0;
+}
+
+.navlinks li {
+  display: inline-block;
+  margin: 0px 40px;
+}
+
+.navlinks li a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  letter-spacing: 2px;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.navlinks li a:hover {
+  color: #1cc486;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-top: 1px solid #16A169;
+  border-bottom: 1px solid #16A169;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-botao {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  float: right;
+  line-height: 90px;
+  margin-right: 40px;
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 915px) {
+  .navlinks {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    transition: all 0.5s;
+    right: -100%;
+    background: #32473f;
+    opacity: 0.99;
+  }
+
+  .navlinks li {
+    display: block;
+  }
+
+  .navlinks li a {
+    font-size: 20px;
+  }
+
+  .navlinks li a:hover {
+    border-bottom: none;
+    border-top: none;
+  }
+
+  .menu-botao {
+    display: block;
+  }
+
+  #menu:checked ~ .navlinks {
+    right: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo {
+    margin-left: 10px;
+    font-size: 25px;
+  }
+
+  .menu-botao {
+    margin-right: 10px;
+    font-size: 25px;
+  }
+
+}
+
+.imagens-frente {
+  transition: 0.3s;
+	max-width: 100%;
+	display: block;
+}
+
+.imagens-frente_txt{
+  letter-spacing: 3px;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.imagens-flex > div{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 0 auto 50px auto;
+}
+
+.imagens-frente:hover{
+  transform: scale(1.03);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.imagens-flex > div > div:hover{
+  transform: scale(1.03);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.imagens-flex > div > div {
+	flex: 1 1 30%;
+  transition: 0.3s;
+  background-color: #325547;
+	margin: 15px 15px 50px 15px;
+}
+
+.imagens-flex > div > div > p {
+	text-align: center;
+}
+
+.descricao-site{
+  padding-top: 40px;
+  width: 100%;
+  
+}
+
+.descricao-site > div{
+  margin: 15px;
+  width: 61.5%;
+  margin: 0 auto;
+}
+
+.descricao-site > div > h1{
+  font-family: 'Londrina Solid';
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 2rem;
+  transition: 1s;
+  color: #090909;
+}
+
+
+.descricao-site > div > p{
+  font-size: 1.3rem;
+  
+}
+
+.descricao-site > div > hr{
+  background-color: #325547;
+  height: 2px;
+  border: none;
+} 
+
+.cev{
+  margin-top: 80px;
+}
+
+.cev img{
+  width: 100%;
+}
+
+.painel {
+  position:relative;
+  height:100%;
+  min-height:100%;
+  width:100%;
+  z-index:1;
+}
+
+#p1{
+  position:fixed;
+  top:0;
+  z-index:-1;
+}
+
+#p2{
+   margin-top: 38%;
+   background-color: #f3c75f;
+}
+
+.rodape > a{
+  transition: 0.3s;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  margin: -40px auto 50px auto;
+  padding: 10px;
+  border-top: 3px double #325547;
+  border-bottom: 3px double #325547;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #090909;
+  background-color: #f3c75f;
+}
+
+.rodape > a:hover{
+  color: #123528;
+  border-radius: 12px;
+  border-top: 3px double #325547;
+  border-bottom: 3px double #325547;
+}
+
