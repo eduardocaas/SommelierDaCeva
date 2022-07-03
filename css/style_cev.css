@@ -146,10 +146,20 @@ header {
   color: #090909;
 }
 
+.pad{
+  padding-top: 20px;
+}
+
 .img-cev{
   display: flex;
   width: 100%;
-  padding-top: 20px;
+  box-shadow: 9px 9px 0 0 #090909;
+  transition: 0.8s;
+}
+
+.img-cev:hover{
+  transform: scale(1.01);
+  box-shadow: 8px 8px 5px 0 rgba(9,9,9,0.5);
 }
 
 .cev-foto{
@@ -260,6 +270,13 @@ header {
 .foto-bar{
   width: 70%;
   margin-top: 10px;
+  box-shadow: 9px 9px 0 0 #090909;
+  transition: 0.8s;
+}
+
+.foto-bar:hover{
+  transform: scale(1.01);
+  box-shadow: 8px 8px 5px 0 rgba(9,9,9,0.5);
 }
 
 .desc-bar{
@@ -270,6 +287,13 @@ header {
   margin-top: 10px;
   margin-bottom: 3px ;
   background-color: #f3c75f;
+  box-shadow: 9px 9px 0 0 #090909;
+  transition: 0.8s;
+}
+
+.desc-bar:hover{
+  transform: scale(1.01);
+  box-shadow: 8px 8px 5px 0 rgba(9,9,9,0.5);
 }
 
 .end{
@@ -311,7 +335,10 @@ header {
 
 .img-cev{
   width: 50vw;
-  padding: 0 0 10px 10px;
+}
+
+.pad{
+   padding: 0 0 10px 10px;
 }
 
 .cev-desc{

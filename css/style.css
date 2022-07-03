@@ -180,9 +180,10 @@ main{
 
 .imagens-flex > div > div {
 	flex: 1 1 30%;
-  transition: 0.3s;
+  transition: 0.5s;
   background-color: #325547;
 	margin: 15px 15px 50px 15px;
+  box-shadow: 9px 9px 0 0 #090909;
 }
 
 .imagens-flex > div > div > p {
