@@ -46,6 +46,7 @@ header {
   text-decoration: none;
   letter-spacing: 1.5px;
   margin-left: 40px;
+  transition: 0.3s;
   font-family: Megrim;
 }
 
@@ -94,6 +95,11 @@ header {
 }
 
 @media (max-width: 915px) {
+
+  .logo{
+    font-size: 28px;
+  }
+
   .navlinks {
     position: fixed;
     width: 100%;
