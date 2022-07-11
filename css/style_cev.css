@@ -380,7 +380,7 @@ header {
 }
 
 
-@media (max-width: 440px){
+@media (max-width: 450px){
 
   .foto-bar{
     width: 90%;
@@ -391,6 +391,10 @@ header {
   }
 
   .cev-bar > hr{
+    width: 90%;
+  }
+
+  .hr-descbar{
     width: 90%;
   }
 }
@@ -405,6 +409,10 @@ header {
   }
 
   .cev-bar > hr{
+    width: 80%;
+  }
+
+  .hr-descbar{
     width: 80%;
   }
 }
