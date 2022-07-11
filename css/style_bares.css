@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Londrina+Solid:wght@100&family=Megrim&display=swap');
+
+/* paleta de cores
+cor1 - { #517566 }
+cor2 - { #416557 }
+cor3 - { #325547 }
+cor4 - { #224538 }
+cor5 - { #123528 }
+*/
+
+/* paleta de cores 2
+cor1 - { #f3c75f }
+*/
+
+/* paleta de cores alternativa
+cor1 - { #1cc486 }
+cor2 - { #0c5f40 }
+cor3 - { #32473f }
+*/
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Lato;
+  background-color: #f3c75f;
+  color: #FFFFFF;
+}
+
+header {
+  width: 100%;
+  background-color: #325547;
+}
+
+.nav {
+  height: 90px;
+}
+
+.logo {
+  color: white;
+  line-height: 90px;
+  font-size: 36px;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  margin-left: 40px;
+  transition: 0.3s;
+  font-family: Megrim;
+}
+
+.navlinks {
+  list-style: none;
+  line-height: 90px;
+  float: right; 
+  margin: 0;
+  padding: 0;
+}
+
+.navlinks li {
+  display: inline-block;
+  margin: 0px 40px;
+}
+
+.navlinks li a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  letter-spacing: 2px;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.navlinks li a:hover {
+  color: #1cc486;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-top: 1px solid #16A169;
+  border-bottom: 1px solid #16A169;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-botao {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  float: right;
+  line-height: 90px;
+  margin-right: 40px;
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 915px) {
+
+  .logo{
+    font-size: 28px;
+  }
+
+  .navlinks {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    transition: all 0.5s;
+    right: -100%;
+    background: #32473f;
+    opacity: 0.99;
+  }
+
+  .navlinks li {
+    display: block;
+  }
+
+  .navlinks li a {
+    font-size: 20px;
+  }
+
+  .navlinks li a:hover {
+    border-bottom: none;
+    border-top: none;
+  }
+
+  .menu-botao {
+    display: block;
+  }
+
+  #menu:checked ~ .navlinks {
+    right: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo {
+    margin-left: 10px;
+    font-size: 25px;
+  }
+
+  .menu-botao {
+    margin-right: 10px;
+    font-size: 25px;
+  }
+
+}
+
+.fundo{
+  margin: 40px 20px 20px 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: #151515;
+  color: white;
+}
+
+.titulo{
+  margin: 0 40px 20px 40px;
+  text-align: center;
+  background-color: #212121;
+}
+
+.titulo > span {
+  font-family: 'Londrina Solid';
+  font-size: 5rem;
+  color:  #f3c75f;
+  letter-spacing: 2px;
+  text-shadow: 4px 4px 1px black;
+  
+
+}
+
+figcaption{
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bar-foto{
+  width: 25vw;
+  box-shadow: 9px 9px 0 0 #325547;
+  transition: 0.3s;
+}
+
+
+.bar-foto:hover{
+  box-shadow: 9px 9px 0 0 #f3c75f;
+}
+
+.bar-box{
+  display: flex;
+  padding: 20px;
+  background-color: #212121;
+}
+
+.bar-nome{
+  font-family: 'Londrina Solid';
+  font-size: 3.5rem;
+  line-height: 15vw;
+  text-shadow: 3px 3px 0 #325547;
+  letter-spacing: 2px;
+}
+
+.bar-end{
+  margin-top: 5vw;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  
+}
+
+.end{
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+hr{
+  border: 1px solid #325547;
+}
+
+.rodape{
+  text-align: center;
+  padding: 40px;
+  background-color: #222222;
+  margin: 20px 40px 20px 40px;
+}
+
+.rodape > a{
+  transition: 0.3s;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  padding: 10px;
+  border-top: 3px double #325547;
+  border-bottom: 3px double #325547;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #222222;
+}
+
+.rodape > a:hover{
+  color: #f3c75f;
+  border-radius: 12px;
+  border-top: 3px double #325547;
+  border-bottom: 3px double #325547;
+}
+
+@media (max-width: 1450px){
+  hr{
+    width: 300px;
+  }
+
+  figcaption{
+    width: 350px;
+  }
+}
+
+@media (max-width: 1200px){
+  .bar-box{
+    flex-direction: column;
+  }
+  .bar-foto{
+    width: 35vw;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 650px){
+  .titulo > span{
+    font-size: 3.3rem;
+  }
+}
+
+@media (max-width: 505px){
+  .bar-nome{
+    font-size: 2.5rem;
+  }
+
+  .bar-end{
+    font-size: 1rem;
+  }
+
+  .end{
+    font-size: 1.4rem;
+  }
+
+  figcaption{
+    width: 200px;
+  }
+
+  hr{
+    width: 200px;
+  }
+
+  .rodape > a{
+    font-size: 0.5rem;
+  }
+
+  .titulo > span{
+    font-size: 2rem;
+  }
+}
