@@ -379,12 +379,33 @@ header {
 
 }
 
-@media (max-width: 320px) {
-.cev-foto{
-  display: inline-flex;
-  flex-direction: row;
+
+@media (max-width: 440px){
+
+  .foto-bar{
+    width: 90%;
+  }
+
+  .desc-bar{
+    width: 59%;
+  }
+
+  .cev-bar > hr{
+    width: 90%;
+  }
 }
 
-}
+@media (max-width:  380px){
+  .foto-bar{
+    width: 80%;
+  }
 
+  .desc-bar{
+    width: 46%;
+  }
+
+  .cev-bar > hr{
+    width: 80%;
+  }
+}
 
