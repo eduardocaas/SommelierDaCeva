@@ -34,6 +34,12 @@ body {
 header {
   width: 100%;
   background-color: #325547;
+  position: fixed;
+  z-index: 3;
+}
+
+main{
+  padding-top: 120px;
 }
 
 .nav {
@@ -148,7 +154,7 @@ header {
 }
 
 .fundo{
-  margin: 40px 20px 20px 20px;
+  margin: 0px 20px 20px 20px;
   padding-top: 20px;
   padding-bottom: 10px;
   background-color: #151515;
