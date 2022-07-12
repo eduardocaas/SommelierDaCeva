@@ -212,6 +212,8 @@ main{
 .imgs-desc{
   display: flex;
   flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 figcaption > p{
@@ -234,6 +236,14 @@ figcaption > p{
   .imgs{
     width: 30vw;
   }
+}
+
+@media (max-width:  800px){
+  .imgs-desc{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 }
 
 @media (max-width: 460px){
