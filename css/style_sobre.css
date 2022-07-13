@@ -165,9 +165,6 @@ main{
   margin:  30px;
   font-size: 3rem;
   letter-spacing: 3px;
-}
-
-.sobre-tit > p{
   margin-left: 2.5%;
   margin-right: 2.5%;
   text-transform: uppercase;
@@ -187,6 +184,11 @@ main{
 .imgs{
   width: 15vw;
   box-shadow: 9px 9px 0 0 #325547;
+  transition: 0.3s;
+}
+
+.imgs:hover{
+  box-shadow: 9px 9px 0 0 #f3c75f;
 }
 
 .titulo{
@@ -244,6 +246,12 @@ figcaption > p{
   padding-right: 0px;
 }
 
+}
+
+@media (max-width: 500px){
+  .logo{
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 460px){
